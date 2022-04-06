@@ -1,12 +1,11 @@
 body {
-  background-color: black;
-  padding: 5px;
-  margin: 20px;  
+  background-color: black;  
 }
 
 h1 {
   position: relative;
   text-align: center;
+  top: 20px;
   font-size: 3rem;
   color: rgb(247, 251, 31);
   font-family: 'Press Start 2P', cursive;
@@ -20,16 +19,36 @@ button{
   width: max-content;
   padding: 10px, 10px;
   margin-top: 25px;
+  font-family: 'Press Start 2P', cursive;
+  -webkit-box-shadow: 0 0 17px 3px #ffff01,0 0 4px 2px #ffff01;
+  box-shadow: 0 0 17px 3px #ffff01,0 0 4px 2px #ffff01;
+z-index: -1;
+-webkit-animation-name: half-yellow-shadow;
+  animation-name: half-yellow-shadow;
+-webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+-webkit-animation-duration: 5s;
+  animation-duration: 5s;
+-webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-ms-border-radius: 5px;
+-o-border-radius: 5px;
 }
   
 #container{
+  position: relative;
+  top: 25px;
   background-color: rgb(0, 0, 0);
   border: solid;
   border-width: 8px;
-  border-radius: 25px;
+  border-radius: 25px;  
   border-color: rgb(10, 21, 237);
-  height: 550px;
-  width: auto;
+  height: 450px;
+  left: 5%;
+  width: 90%;
   -webkit-box-shadow:0 0 40px blue; 
   -moz-box-shadow: 0 0 40px blue; 
   box-shadow:0 0 40px blue;
@@ -38,9 +57,29 @@ button{
   
 .buttons{
   text-align: center;
+  margin-top: 30px;
+}
+
+#addbutton {
+  margin-right: 30px;
+}
+
+#startbutton {
 }
 
 .gridContainer {
     display: grid;
     grid-template-rows: auto;
+}
+
+#brand {
+  color: rgb(204, 6, 6);
+  font-family: 'Space Mono', monospace;
+}
+
+.Navigation {
+  position: relative;
+  left: 0;
+  padding: 0;
+  z-index: 6;
 }
